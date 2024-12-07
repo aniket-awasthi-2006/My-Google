@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="box">
+<h1>My Google</h1>
+<img src="./img.png" style="height: 6cm;">
+
+<input id="searchInput" placeholder="Write What you want search here" size="60" >
+<button class="btn" onclick="searchGoogle()">Search</button>
+<a href="https://github.com/aniket-awasthi-2006">Open My Github Profile</a>
+</div>
+
+</body>
+<script>
+    function searchGoogle() {
+
+         var query = document.getElementById('searchInput').value;
+        var url = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+        window.open(url, '_blank'); // Open the search in a new tab
+    }
+</script>
+</html>
+
